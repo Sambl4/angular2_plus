@@ -4,7 +4,8 @@ import { FormsModule } from '@angular/forms';
 
 import { TasksRoutingModule } from './tasks.routing.module';
 
-import { TaskComponent, TaskListComponent, TaskArrayService } from '.'
+import { TaskComponent, TaskFormComponent, TaskListComponent, TaskArrayService } from '.';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -13,7 +14,8 @@ import { TaskComponent, TaskListComponent, TaskArrayService } from '.'
   ],
   declarations: [
     TaskListComponent,
-    TaskComponent
+    TaskComponent,
+    TaskFormComponent
   ],
   providers: [
     TaskArrayService

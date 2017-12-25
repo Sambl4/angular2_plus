@@ -23,11 +23,17 @@
         </nav>
 
         <div class="container">
-          <router-outlet
-            (activate)='onActivate($event)'
-            (deactivate)='onDeactivate($event)'>
-          </router-outlet>
-        <!-- Routedviewsgohere -->
+          <div class="col-md-10">
+            <router-outlet
+                          (activate)='onActivate($event)'
+                          (deactivate)='onDeactivate($event)'>
+            </router-outlet>
+            <!-- Routed views go here -->
+          </div>
+          <div class="col-md-2">
+            <router-outlet name="popup"></router-outlet>
+          </div>
         </div>
+
     </div>
 </div>

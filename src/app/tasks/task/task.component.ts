@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-
+import { Router } from '@angular/router';
 import { Task } from './../../models/task';
 
 @Component({
@@ -11,13 +11,16 @@ export class TaskComponent {
   @Input() task: Task;
   @Output() onComplete = new EventEmitter<Task>();
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   completeTask(): void {
     this.onComplete.emit(this.task);
   }
 
   editTask() {
-
+    const link = ['/edit', this.task.id];
+    this.router.navigate(link);
   }
 }

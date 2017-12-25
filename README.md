@@ -1,6 +1,9 @@
 angular2+
 https://videoportal.epam.com/video/wJvVbdJ6
 
+Angular 2+ Part V. Routing. II.
+https://videoportal.epam.com/video/qok9PVJA
+
 An
 
 This project was generated with Angular CLI version 1.5.0.
