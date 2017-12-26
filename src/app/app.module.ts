@@ -5,23 +5,33 @@ import { HttpModule } from '@angular/http';
 import { Router } from '@angular/router';
 
 import { TasksModule } from './tasks/tasks.module';
+import { UsersModule } from './users/users.module';
+import { AdminModule } from './admin/admin.module';
 import { AppRoutingModule, appRouterComponents } from './app.routing.module';
 
 import { AppComponent } from './app.component';
+import { MessagesComponent } from './components';
+
+import { MessagesService } from './services';
 
 @NgModule({
   declarations: [
     AppComponent,
-    appRouterComponents
+    appRouterComponents,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     TasksModule,
+    UsersModule,
+    AdminModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    MessagesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
