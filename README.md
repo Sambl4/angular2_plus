@@ -4,7 +4,13 @@ https://videoportal.epam.com/video/wJvVbdJ6
 Angular 2+ Part V. Routing. II.
 https://videoportal.epam.com/video/qok9PVJA
 
+Angular 2+ Part V. Routing. III.
+https://videoportal.epam.com/video/Lo9AxkoD
 An
+
+Angular 2+ Part V. Routing. IV.
+https://videoportal.epam.com/video/nRmWrba9
+
 
 This project was generated with Angular CLI version 1.5.0.
 

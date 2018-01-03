@@ -37,7 +37,7 @@ export class TaskFormComponent implements OnInit, OnDestroy {
   }
 
   saveTask() {
-const task = {...this.task};
+    const task = {...this.task};
 
     if (task.id) {
       this.taskArrayService.updateTask(task);
